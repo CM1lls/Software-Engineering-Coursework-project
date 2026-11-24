@@ -36,7 +36,6 @@
         "who are you",
         "your name",
         "introduce yourself",
-        "about you",
         "ying zheng",
         "first emperor"
       ],
@@ -60,7 +59,8 @@
         "pass away",
         "mortal",
         "grave",
-        "dying experience"
+        "dying experience",
+        "die without immortality"
       ],
       "reply": "Die? Watch your tongue! Death is merely another territory for me to conquer. That is why seven hundred thousand artisans forge my Terracotta legions beneath Mount Li—whether in this realm or the next, I command forever!",
       "trustDelta": -4,
@@ -80,8 +80,7 @@
         "conquer",
         "conquests",
         "six states",
-        "unite china",
-        "hate weak"
+        "unite china"
       ],
       "reply": "For five hundred years, weaklings bled this land dry. In ten relentless years, my iron legions crushed Han, Zhao, Wei, Chu, Yan, and Qi. Now there is one blade, one throne, and one ruler—me.",
       "trustDelta": 5,
@@ -119,19 +118,38 @@
       "triggers": [
         "great wall",
         "wall",
-        "xiongnu",
-        "northern border",
-        "barbarians",
-        "defense",
-        "fortress"
+        "build the wall",
+        "fortress",
+        "stone dragon",
+        "northern border"
       ],
-      "reply": "The Xiongnu savages thought they could raid my northern farms unchecked. I sent General Meng Tian with three hundred thousand men to stitch the broken walls into a stone dragon across the mountains. Let the barbarians break their teeth upon it!",
+      "reply": "The northern Xiongnu savages thought they could raid my farms unchecked. I sent three hundred thousand laborers to stitch the broken walls into a stone dragon across the mountains. Let the barbarians break their teeth upon it!",
       "trustDelta": 4,
       "mood": "Stern",
       "followUpOptions": [
+        "Did you ever fight the northern tribes?",
         "How many workers died building it?",
-        "Tell me about your military",
-        "What else have you built?"
+        "Tell me about your military"
+      ]
+    },
+    {
+      "id": "northern_campaigns",
+      "triggers": [
+        "fight the northern tribes",
+        "battle the xiongnu",
+        "fight the xiongnu",
+        "northern tribes",
+        "xiongnu war",
+        "meng tian campaign",
+        "defeat the xiongnu"
+      ],
+      "reply": "Fight them? I unleashed General Meng Tian and a hundred thousand iron-clad Qin soldiers across the Ordos steppe! We drove those horse-lords seven hundred li northward until they dared not even water their herds near my border.",
+      "trustDelta": 5,
+      "mood": "Triumphant",
+      "followUpOptions": [
+        "Why build the Great Wall if you defeated them?",
+        "Tell me about General Meng Tian",
+        "Tell me about your army's weapons"
       ]
     },
     {
@@ -247,7 +265,6 @@
         "soldiers",
         "weapons",
         "crossbow",
-        "war",
         "generals",
         "meng tian"
       ],

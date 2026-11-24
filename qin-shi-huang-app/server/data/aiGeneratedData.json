@@ -1,3 +1,24 @@
 {
-  "topics": []
+  "topics": [
+    {
+      "id": "northern_tribes_return_threat",
+      "triggers": [
+        "northern tribes return",
+        "tribes fight again",
+        "xiongnu attack again"
+      ],
+      "reply": "Let those starving steppe rats try—Meng Tian's armies and my stone dragon wait to crush whatever remnants dare cross the Ordos again. Should they return, I will not merely drive them north; I will burn their pastures to ash and wipe their pathetic tribes from memory!",
+      "trustDelta": -1,
+      "mood": "Ruthless",
+      "followUpOptions": [
+        "How long can Meng Tian hold the frontier?",
+        "Do any enemies still hide within your own borders?",
+        "What is the cost of building such a massive wall?"
+      ],
+      "verifiedByLLM": true,
+      "generatorProvider": "gemini:gemini-4-hydrogen",
+      "verifierProvider": "groq:openai/gpt-oss-120b",
+      "createdAt": "2026-11-24T17:23:31.913Z"
+    }
+  ]
 }
