@@ -1,11 +1,19 @@
 const fs = require('fs');
 const path = require('path');
 
-// Load the JSON file dynamically so edits are easy to test
 const getDialogueData = () => {
   const filePath = path.join(__dirname, '../data/dialogueData.json');
   const rawData = fs.readFileSync(filePath, 'utf-8');
   return JSON.parse(rawData);
+};
+
+// Escape special regex characters in triggers
+const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+// Check if a trigger appears as a whole word or phrase (prevents "hi" matching "childhood" or "China")
+const matchesWholeWord = (text, trigger) => {
+  const pattern = new RegExp(`\\b${escapeRegex(trigger.toLowerCase())}\\b`, 'i');
+  return pattern.test(text);
 };
 
 exports.handleChat = (req, res) => {
@@ -14,22 +22,28 @@ exports.handleChat = (req, res) => {
     const userInput = (message || '').toLowerCase().trim();
     const data = getDialogueData();
 
-    // Find the first topic where any trigger phrase appears in the user's message
-    const matchedTopic = data.topics.find((topic) =>
-      topic.triggers.some((trigger) => userInput.includes(trigger.toLowerCase()))
-    );
+    let bestMatch = null;
+    let longestTriggerLength = 0;
 
-    if (matchedTopic) {
+    for (const topic of data.topics) {
+      for (const trigger of topic.triggers) {
+        if (matchesWholeWord(userInput, trigger) && trigger.length > longestTriggerLength) {
+          bestMatch = topic;
+          longestTriggerLength = trigger.length;
+        }
+      }
+    }
+
+    if (bestMatch) {
       return res.json({
-        topicId: matchedTopic.id,
-        reply: matchedTopic.reply,
-        trustDelta: matchedTopic.trustDelta,
-        mood: matchedTopic.mood,
-        followUpOptions: matchedTopic.followUpOptions,
+        topicId: bestMatch.id,
+        reply: bestMatch.reply,
+        trustDelta: bestMatch.trustDelta,
+        mood: bestMatch.mood,
+        followUpOptions: bestMatch.followUpOptions,
       });
     }
 
-    // Return the predetermined fallback if no trigger matched
     return res.json({
       topicId: 'fallback',
       reply: data.fallback.reply,
