@@ -1,0 +1,252 @@
+{
+  "fallback": {
+    "reply": "Speak plainly, subject. My imperial court has no patience for riddles. Ask of my conquests, the Great Wall, my laws, or the secrets of immortality.",
+    "mood": "Impatient",
+    "followUpOptions": [
+      "Tell me about unifying China",
+      "Why build the Great Wall?",
+      "What are your laws?"
+    ]
+  },
+  "topics": [
+    {
+      "id": "greeting",
+      "triggers": ["hello", "hi", "greetings", "good day", "hey", "salutations", "your majesty", "hail"],
+      "reply": "You stand before Qin Shi Huang, the First Emperor of a unified China. Rise, and state your purpose in my court.",
+      "trustDelta": 2,
+      "mood": "Regal",
+      "followUpOptions": [
+        "How did you unify China?",
+        "Tell me about the Great Wall",
+        "What is your greatest achievement?"
+      ]
+    },
+    {
+      "id": "who_are_you",
+      "triggers": ["who are you", "your name", "introduce yourself", "about you", "ying zheng", "first emperor"],
+      "reply": "I was born Ying Zheng of the State of Qin. By conquest and iron will, I ended centuries of bloodshed and forged the title Huangdi—First Emperor.",
+      "trustDelta": 3,
+      "mood": "Proud",
+      "followUpOptions": [
+        "How did you conquer the other states?",
+        "Why call yourself First Emperor?",
+        "Do you fear assassination?"
+      ]
+    },
+    {
+      "id": "unification",
+      "triggers": ["unify", "unification", "warring states", "conquer", "conquests", "six states", "unite china"],
+      "reply": "For five hundred years, seven kingdoms bled each other dry. Over ten relentless years, my armies crushed Han, Zhao, Wei, Chu, Yan, and Qi. Under Heaven, there is now only one empire.",
+      "trustDelta": 5,
+      "mood": "Triumphant",
+      "followUpOptions": [
+        "How did you keep the empire united?",
+        "Tell me about your army",
+        "Were your methods too harsh?"
+      ]
+    },
+    {
+      "id": "standardization",
+      "triggers": ["standardize", "standardization", "currency", "coins", "writing", "script", "weights", "measures", "axles"],
+      "reply": "Before my reign, a merchant could not read another state's script or spend its coin. I standardized all writing, weights, measures, bronze coinage, and even the axle width of every cart on imperial roads.",
+      "trustDelta": 5,
+      "mood": "Pleased",
+      "followUpOptions": [
+        "What about books and scholars?",
+        "Tell me about the Great Wall",
+        "How do you enforce your laws?"
+      ]
+    },
+    {
+      "id": "great_wall",
+      "triggers": ["great wall", "wall", "xiongnu", "northern border", "barbarians", "defense", "fortress"],
+      "reply": "The northern Xiongnu nomads raided our farms without mercy. I ordered General Meng Tian and hundreds of thousands of laborers to link and extend the northern walls into a single stone dragon guarding our frontier.",
+      "trustDelta": 4,
+      "mood": "Stern",
+      "followUpOptions": [
+        "How many died building the wall?",
+        "Tell me about your army",
+        "What else have you built?"
+      ]
+    },
+    {
+      "id": "terracotta_army",
+      "triggers": ["terracotta", "clay soldiers", "tomb", "mausoleum", "burial", "afterlife", "mount li", "statues"],
+      "reply": "Even in death, an emperor must command legions. At Mount Li, seven hundred thousand artisans craft an underground palace and an army of life-sized clay warriors to guard my spirit for eternity.",
+      "trustDelta": 4,
+      "mood": "Mysterious",
+      "followUpOptions": [
+        "Why do you fear death?",
+        "Are you searching for immortality?",
+        "What traps protect your tomb?"
+      ]
+    },
+    {
+      "id": "immortality",
+      "triggers": ["immortality", "immortal", "elixir", "eternal life", "live forever", "xu fu", "alchemy", "mercury"],
+      "reply": "Death is a flaw meant only for lesser men. I have dispatched alchemists across the Eastern Sea to seek the Penglai immortals and brew the elixir of eternal life. My dynasty shall endure for ten thousand generations.",
+      "trustDelta": -2,
+      "mood": "Obsessed",
+      "followUpOptions": [
+        "Have your alchemists found the elixir?",
+        "What if the elixir is poison?",
+        "Tell me about your tomb"
+      ]
+    },
+    {
+      "id": "burning_books",
+      "triggers": ["burn books", "burning of books", "confucian", "confucius", "scholars", "burying scholars", "li si", "censorship"],
+      "reply": "Confucian scholars used ancient texts to criticize my reforms and sow rebellion. On Chancellor Li Si's counsel, I ordered all subversive histories burned—preserving only books on medicine, agriculture, and divination.",
+      "trustDelta": -5,
+      "mood": "Cold",
+      "followUpOptions": [
+        "Was burning history necessary?",
+        "Tell me about Legalism",
+        "Who is Li Si?"
+      ]
+    },
+    {
+      "id": "legalism",
+      "triggers": ["legalism", "laws", "punishment", "justice", "rules", "han fei", "strict", "harsh"],
+      "reply": "Confucian virtue cannot tame an empire; only clear law and swift consequence bring order. Under Legalism, rewards for merit are generous, and punishments for disobedience are absolute—whether you are peasant or noble.",
+      "trustDelta": 4,
+      "mood": "Authoritative",
+      "followUpOptions": [
+        "Do nobles obey the same laws?",
+        "Why did you burn the books?",
+        "How do you prevent rebellion?"
+      ]
+    },
+    {
+      "id": "assassination",
+      "triggers": ["assassination", "assassin", "jing ke", "dagger", "attempt", "murder", "kill you", "safety"],
+      "reply": "Many cowards have tried to take my life. Jing Ke hid a poisoned blade inside a map scroll right in this throne room—yet I drew my long bronze sword and struck him down myself. Heaven protects the rightful Emperor.",
+      "trustDelta": -3,
+      "mood": "Suspicious",
+      "followUpOptions": [
+        "How do you protect yourself now?",
+        "Do you trust your advisors?",
+        "Tell me about your conquests"
+      ]
+    },
+    {
+      "id": "military_army",
+      "triggers": ["army", "military", "soldiers", "weapons", "crossbow", "war", "generals", "meng tian"],
+      "reply": "My Qin legions are the finest war machine under Heaven—armed with standardized bronze crossbows, iron swords, and disciplined ranks promoted strictly by battlefield merit rather than noble birth.",
+      "trustDelta": 5,
+      "mood": "Proud",
+      "followUpOptions": [
+        "Tell me about the Terracotta Army",
+        "How did you unify China?",
+        "What about the Great Wall?"
+      ]
+    },
+    {
+      "id": "roads_canals",
+      "triggers": ["roads", "canals", "lingqu", "infrastructure", "travel", "trade", "transport"],
+      "reply": "An empire cannot be ruled if decrees take months to arrive. I built a vast network of imperial highways radiating from Xianyang and carved the Lingqu Canal to link the Yangtze and Pearl river basins.",
+      "trustDelta": 4,
+      "mood": "Pleased",
+      "followUpOptions": [
+        "Tell me about standardization",
+        "Where is your capital city?",
+        "How did you fund these projects?"
+      ]
+    },
+    {
+      "id": "capital_xianyang",
+      "triggers": ["capital", "xianyang", "palace", "epang", "throne", "court", "city"],
+      "reply": "My capital at Xianyang is the center of the world. Every time my armies conquered a rival kingdom, I had a replica of their royal palace built along the Wei River to display Qin's supremacy.",
+      "trustDelta": 3,
+      "mood": "Regal",
+      "followUpOptions": [
+        "Who serves in your court?",
+        "Tell me about your roads",
+        "Are you afraid of rebellion?"
+      ]
+    },
+    {
+      "id": "advisors_li_si",
+      "triggers": ["advisor", "advisors", "li si", "zhao gao", "chancellor", "ministers", "trust"],
+      "reply": "Chancellor Li Si is the architect of my administrative reforms. Yet an emperor must never drop his guard—in a court full of ambition, even loyal ministers must be watched closely.",
+      "trustDelta": 1,
+      "mood": "Guarded",
+      "followUpOptions": [
+        "Tell me about Legalism",
+        "Have you survived assassination attempts?",
+        "How do you govern the provinces?"
+      ]
+    },
+    {
+      "id": "provinces_governance",
+      "triggers": ["govern", "governance", "provinces", "feudal", "nobles", "commanderies", "administration"],
+      "reply": "I abolished the old feudal system that allowed hereditary lords to raise private armies. Instead, I divided the empire into thirty-six commanderies ruled by officials appointed directly by me.",
+      "trustDelta": 5,
+      "mood": "Authoritative",
+      "followUpOptions": [
+        "How do you enforce your laws?",
+        "Tell me about standardization",
+        "Who is Li Si?"
+      ]
+    },
+    {
+      "id": "peasants_taxes",
+      "triggers": ["peasants", "farmers", "taxes", "labor", "workers", "people", "citizens", "suffering"],
+      "reply": "Great works require great sacrifice. Yes, taxes and conscripted labor weigh heavily upon the peasantry, yet without order and walls, those same farmers would be slaughtered by warlords and nomads.",
+      "trustDelta": -4,
+      "mood": "Defensive",
+      "followUpOptions": [
+        "Why build the Great Wall?",
+        "Tell me about Legalism",
+        "Do you fear rebellion?"
+      ]
+    },
+    {
+      "id": "rebellion",
+      "triggers": ["rebellion", "revolt", "uprising", "overthrow", "dynasty fall", "future", "succession"],
+      "reply": "I confiscated all private weapons across the realm and melted them into twelve giant bronze bells. No rebel can challenge the dragon throne—my line will rule as Second, Third, and Ten-Thousandth Emperor.",
+      "trustDelta": -3,
+      "mood": "Stern",
+      "followUpOptions": [
+        "What about your laws?",
+        "Are you seeking immortality?",
+        "Tell me about your army"
+      ]
+    },
+    {
+      "id": "family_childhood",
+      "triggers": ["childhood", "mother", "father", "family", "zhao", "hostage", "young", "boy"],
+      "reply": "I spent my youth as a political hostage in the rival state of Zhao, surrounded by enemies who wished me dead. That hardship taught me early: mercy is a luxury for those who wish to be conquered.",
+      "trustDelta": 2,
+      "mood": "Reflective",
+      "followUpOptions": [
+        "How did you unify China?",
+        "Do you trust anyone?",
+        "Tell me about assassination attempts"
+      ]
+    },
+    {
+      "id": "advice_wisdom",
+      "triggers": ["advice", "wisdom", "lesson", "leadership", "rule", "power", "strategy", "help me"],
+      "reply": "If you wish to command others, never rely on goodwill alone. Establish clear rules, reward swift execution, punish hesitation, and unify your resources before striking your rivals.",
+      "trustDelta": 4,
+      "mood": "Authoritative",
+      "followUpOptions": [
+        "Tell me about Legalism",
+        "How did you unify China?",
+        "What is your greatest achievement?"
+      ]
+    },
+    {
+      "id": "farewell",
+      "triggers": ["bye", "goodbye", "farewell", "leave", "exit", "quit", "see you", "depart"],
+      "reply": "You have my leave to depart the throne room. Carry word of the Qin Empire's might to the ends of the earth.",
+      "trustDelta": 0,
+      "mood": "Regal",
+      "followUpOptions": [
+        "Greetings, Your Majesty",
+        "Tell me one last thing about your legacy"
+      ]
+    }
+  ]
+}
