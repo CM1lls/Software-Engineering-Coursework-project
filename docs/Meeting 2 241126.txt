@@ -1,0 +1,22 @@
+Meeting 2 24/11/26
+In Attendance:
+Chris
+Jonas
+Hristo
+
+Goal of meeting: discuss progress so far, who's done what and what we need to focus on.
+
+Jonas: Has implemented a lot of the backend conversational logic, implemented a basic chat box to display conversation
+
+Chris: Has worked on Requirements list, user experience flow chart, implemented a chat box that may be obsolete
+
+Next Steps:
+Refine Requirements
+
+Jonas: Get Backend into a fully functional state for current requirements 
+
+Chris: Focus on design of UI and create wireframes
+
+Hristo: Focus on design of assets for front end
+
+Sam: Focus on react and animations for front end 
